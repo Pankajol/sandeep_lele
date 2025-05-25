@@ -38,9 +38,9 @@ export default function RootLayout({
 
            
         
-      
+        <Footer />
       </body>
-       <Footer />
+     
     </html>
   );
 }

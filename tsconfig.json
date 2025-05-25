@@ -23,5 +23,8 @@
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+   "images": {
+    "domains": ["images.unsplash.com", "i.ytimg.com"], // add more domains if needed
+  },
 }

@@ -12,7 +12,7 @@ export default function AboutSection() {
         {/* Top intro with main image */}
         <div className="flex flex-col md:flex-row items-center gap-10 mb-16">
           <Image
-            src="https://th.bing.com/th/id/OIP.YRcbM5qtJ5Izz1vrmW2hdgHaHa?cb=iwp2&rs=1&pid=ImgDetMain"
+            src= "/pic5.jpg"
             alt="District President"
             className="w-full md:w-1/2 rounded-xl shadow-lg object-cover"
             width={600}
@@ -37,25 +37,30 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-20">
           {[
             {
-              src: "https://images.unsplash.com/photo-1532074205216-7897f4fbc62a?auto=format&fit=crop&w=200&q=60",
-              alt: "Terms Icon",
+             // src: "https://images.unsplash.com/photo-1532074205216-7897f4fbc62a?auto=format&fit=crop&w=200&q=60",
+             src: "/pic2.jpg",
+             alt: "Terms Icon",
               title: "Three Terms",
               desc: "Elected thrice as District President, consistently trusted by the party and people for his leadership.",
             },
             {
-              src: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=200&q=60",
+             
+              //src: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=200&q=60",
+                  src: "/pic1.jpg",
               alt: "Municipal Corporation",
               title: "TMC Corporation Member",
               desc: "Served as a Corporation Member, contributing to urban planning and public welfare programs.",
             },
             {
-              src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=200&q=60",
+              //src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=200&q=60",
+                   src: "/pic3.jpg",
               alt: "NGO Work",
               title: "NGO & Social Work",
               desc: "Leads multiple NGOs focused on youth empowerment, women&apos;s welfare, and environmental sustainability.",
             },
             {
-              src: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=200&q=60",
+              // src: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=200&q=60",
+                   src: "/pic4.jpg",
               alt: "Vision",
               title: "Vision & Mission",
               desc: "Dedicated to transparent governance, grassroots involvement, and building a prosperous, united district.",

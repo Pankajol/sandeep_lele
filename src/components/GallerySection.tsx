@@ -4,49 +4,57 @@ import Image from "next/image";
 
 const images = [
   {
-    src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+    // src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+    src:"/pic1.jpg",
     alt: "Community Rally",
     category: "Rallies",
     caption: "District President addressing a community rally in 2023.",
   },
   {
-    src: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=80",
+    //src: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=80",
+    src:"/pic2.jpg",
     alt: "Youth Workshop",
     category: "Community Work",
     caption: "Engaging youth in a skill development workshop.",
   },
   {
-    src: "https://images.unsplash.com/photo-1532074205216-7897f4fbc62a?auto=format&fit=crop&w=800&q=80",
+    //src: "https://images.unsplash.com/photo-1532074205216-7897f4fbc62a?auto=format&fit=crop&w=800&q=80",
+    src:"/pic3.jpg",
     alt: "NGO Event",
     category: "Community Work",
     caption: "Organizing a women’s empowerment event.",
   },
   {
-    src: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
+    //src: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
+    src:"/pic4.jpg",
     alt: "Cultural Festival",
     category: "Events",
     caption: "Celebrating local culture with community members.",
   },
   {
-    src: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=800&q=80",
+    //src: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=800&q=80",
+    src:"/pic5.jpg",
     alt: "Tree Plantation Drive",
     category: "Community Work",
     caption: "Leading a tree plantation drive for environmental sustainability.",
   },
   {
-    src: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+    //src: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+    src:"/pic1.jpg",
     alt: "Election Campaign",
     category: "Rallies",
     caption: "Campaigning for the upcoming district elections.",
   },
   {
-    src: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=800&q=80",
+    //src: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=800&q=80",
+    src:"/pic2.jpg",
     alt: "Public Meeting",
     category: "Events",
     caption: "Open meeting with district citizens for development discussions.",
   },
   {
-    src: "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80",
+    //src: "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80",
+    src:"/pic3.jpg",
     alt: "Health Awareness",
     category: "Community Work",
     caption: "Health awareness camp organized by local NGOs.",
@@ -111,6 +119,8 @@ export default function GallerySection() {
               <Image
                 src={img.src}
                 alt={img.alt}
+                width={800}
+                height={600}
                 className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
               />
@@ -142,6 +152,8 @@ export default function GallerySection() {
             <Image
               src={activeImage.src}
               alt={activeImage.alt}
+              width={800}
+              height={600}
               className="w-full object-contain rounded-t-lg"
             />
             <div className="p-4">
