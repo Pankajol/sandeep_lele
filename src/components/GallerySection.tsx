@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
 const images = [
   {
@@ -107,7 +108,7 @@ export default function GallerySection() {
               className="relative cursor-pointer group rounded-lg overflow-hidden shadow-lg hover:shadow-xl"
               onClick={() => openModal(img)}
             >
-              <img
+              <Image
                 src={img.src}
                 alt={img.alt}
                 className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
@@ -138,7 +139,7 @@ export default function GallerySection() {
             >
               &times;
             </button>
-            <img
+            <Image
               src={activeImage.src}
               alt={activeImage.alt}
               className="w-full object-contain rounded-t-lg"

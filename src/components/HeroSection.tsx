@@ -1,6 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const slides = [
   {
@@ -47,7 +48,7 @@ export default function HeroSection() {
             index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"
           }`}
         >
-          <img
+          <Image
             src={slide.image}
             alt={slide.caption}
             className="w-full h-full object-cover"

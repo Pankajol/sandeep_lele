@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-type ContactState = {
+type VoterFormState = {
   name: string;
   email: string;
   phone?: string;
@@ -9,7 +9,7 @@ type ContactState = {
 };
 
 export default function ContactForm() {
-  const [form, setForm] = useState<ContactState>({ name: "", email: "", phone: "", message: "" });
+  const [form, setForm] = useState<VoterFormState>({ name: "", email: "", phone: "", message: "" });
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");

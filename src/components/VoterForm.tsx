@@ -16,9 +16,13 @@ export default function VoterForm() {
     area: "",
   });
 
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Voter Form Submitted");
+    alert("Voter Form Submitted:\n" + JSON.stringify(form, null, 2));
   };
 
   return (
@@ -27,28 +31,42 @@ export default function VoterForm() {
         onSubmit={handleSubmit}
         className="w-full max-w-xl bg-white shadow-md rounded p-6"
       >
-        <h2 className="text-2xl font-semibold text-center mb-6 text-orange-700">Voter Registration Form</h2>
+        <h2 className="text-2xl font-semibold text-center mb-6 text-orange-700">
+          Voter Registration Form
+        </h2>
         <input
           type="text"
+          name="name"
           placeholder="Name"
+          value={form.name}
+          onChange={handleChange}
           className="w-full mb-4 border border-gray-300 p-3 rounded"
           required
         />
         <input
           type="text"
+          name="voterId"
           placeholder="Voter ID"
+          value={form.voterId}
+          onChange={handleChange}
           className="w-full mb-4 border border-gray-300 p-3 rounded"
           required
         />
         <input
           type="text"
+          name="mobile"
           placeholder="Mobile Number"
+          value={form.mobile}
+          onChange={handleChange}
           className="w-full mb-4 border border-gray-300 p-3 rounded"
           required
         />
         <input
           type="text"
+          name="area"
           placeholder="Constituency/Area"
+          value={form.area}
+          onChange={handleChange}
           className="w-full mb-6 border border-gray-300 p-3 rounded"
           required
         />
